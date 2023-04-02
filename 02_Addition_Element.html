@@ -1,0 +1,26 @@
+<!-- 
+    Write a program to add two numbers with the help of text box and display their sum in third text box.: (use: getElementById())
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Addition using targeted element</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="first" id="first">
+        <input type="number" name="second" id="second">
+        <button type="submit" onclick="functionAdd()">Add Values</button>
+    </form>
+    <script>
+        function functionAdd(){
+            a = Number(document.getElementById('first').value);
+            b = Number(document.getElementById('second').value);
+
+            sum = a+b;
+            alert("Sum is: " + sum);
+        }
+    </script>
+</body>
+</html>

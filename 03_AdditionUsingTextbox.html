@@ -1,0 +1,32 @@
+<!-- 
+    Write a program to add two numbers with the help of text box and display their sum in the third text box
+    (Program will perform addition only if both box are not empty else generate a pop-up message to the user:
+    "Field can not be left empty")
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Addition using Textbox</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="first" id="first">
+        <input type="number" name="second" id="second">
+        <button type="submit" onclick="functionAdd()">Add Values</button>
+    </form>
+    <script>
+        function functionAdd(){
+            a = Number(document.getElementById('first').value);
+            b = Number(document.getElementById('second').value);
+
+            if(a.length == 0 || b.length==0){
+                alert("Field can not be left empty");
+            }else{
+                sum = a+b;
+                alert("Sum is: " + sum);
+            }
+        }
+    </script>
+</body>
+</html>
