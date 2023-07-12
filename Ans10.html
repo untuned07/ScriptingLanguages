@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer 10</title>
+</head>
+<body>
+    <h1>Addition of Numbers</h1>
+    <hr>
+    <form>
+        <input type="number" name="first" id="first"> <br><br>
+        <input type="number" name="second" id="second"> <br><br>
+        <button type="button" onclick="functionAdd()">Add Values</button> <br> <br>
+        <input type="number" name="result" id="result" placeholder="Result here"><br>
+    </form>
+    <script>
+        function functionAdd(){
+            a = Number(document.getElementById('first').value);
+            b = Number(document.getElementById('second').value);
+
+            if(a.length == 0 || b.length==0){
+                alert("Field can not be left empty");
+            }else{
+                sum = a+b;
+                document.getElementById('result').value = sum; 
+            }
+        }
+    </script>
+</body>
+</html>

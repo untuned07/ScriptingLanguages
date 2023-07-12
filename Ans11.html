@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer 11</title>
+</head>
+<body>
+    <h1>var, let and const Keywords</h1>
+    <hr>
+    <h2>var here: </h2> 
+    <p id="varVal"></p>
+    <h2>let here: </h2>
+    <p id="letVal"></p>
+    <h2>const here: </h2> 
+    <p id="constVal"></p>
+
+    <script>
+        const a = 5;
+        var greet = "hello";
+        if(a > 3){
+            var greet = "hi";
+        }
+        document.getElementById('varVal').innerHTML = greet;
+        let gr = "Welcome";
+        if(a > 3){
+            let gr = "Congratulations";
+        }
+        document.getElementById('letVal').innerHTML = gr;
+        try{
+            a = 2;
+        }catch (err){
+            document.getElementById('constVal').innerHTML = err;
+        }
+    </script>
+</body>
+</html>

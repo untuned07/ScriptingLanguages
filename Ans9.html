@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer 9</title>
+    <script>
+        a = [1, 5, 2, 8, 3, 4];
+        let min = a[0];
+        var max = a[0];
+        for(let i=0; i<a.length; i++){
+            if(a[i] < min) min = a[i];
+            else if (a[i] > max) max = a[i];
+        }
+        alert("Minimum value:"+ min + " and Maximum value: "+ max)
+    </script>
+</head>
+<body>
+    <h1>Minimum/Maximum element</h1>
+    <hr>
+</body>
+</html>

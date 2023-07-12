@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer 13</title>
+</head>
+<body>
+    <h1>Exception Handling in JavaScript</h1>
+    <hr>
+    try-catch block here: 
+    <p id="exceptionHere"></p> <br> <br>
+    throw keyword works here: 
+    <p id="throwException"></p> <br> <br>
+    finally here: 
+    <p id="finallyHere"></p>
+
+    <script>
+        try {
+            adddlert("Hail Forneus!");
+        }
+        catch (err) {
+            document.getElementById("exceptionHere").innerHTML = err.message;
+        }
+        try{
+            x = -3;
+            if(x < 0) throw "Invalid value";
+        }catch(err){
+            document.getElementById("throwException").innerHTML = err;
+        } finally{
+            document.getElementById("finallyHere").innerHTML = "Script Executed.";
+        }
+    </script>
+</body>
+</html>
